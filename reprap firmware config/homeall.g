@@ -37,7 +37,7 @@ if move.kinematics.name == "Polar"
     ; Home B axis
     G1 H2 X-83 F10000  ; go back a few mm
     M84 U             ; disable U motor
-    G1 H2 V370 F20000 ; move V motor until B is homed
+    G1 H2 V-370 F20000 ; move V motor until B is homed
 
     M400
     M84               ; disable motors
