@@ -59,7 +59,7 @@ if move.kinematics.name == "Polar"
     ;;;;;;;;;;;;;;;;
     ;;; HOME BED ;;;
     ;;;;;;;;;;;;;;;;
-    G1 H2 U180 V-180 F20000  ; face z probe down
+   ; G1 H2 U180 V180 F20000  ; face z probe down
     G90              ; absolute movement
     G1 H2 X0  F10000  ; move to middle
     G92 X0 Y0 U0 V0  ; define current position as X0 Y0

@@ -14,7 +14,7 @@ M550 P"polar"                                              ; set printer name
 ; Network
 M552 S1                                                    ; enable network
 M586 P0 S1                                                 ; enable HTTP
-M586 P1 S0                                                 ; disable FTP
+M586 P1 S1                                                 ; disable FTP
 M586 P2 S0                                                 ; disable Telnet
 
 ; Drives
@@ -22,8 +22,8 @@ M84 S30                                                    ; Set idle timeout
 
 ; Custom commands for 4 axis / polar configuration
 ; Comment out one or the other
-;M98 P"to4axis.g"
-M98 P"topolar.g"
+M98 P"to4axis.g"
+;M98 P"topolar.g"
 
 ; Accelerometer
 ;M955 P0 C"PB_2+PA_10" I46

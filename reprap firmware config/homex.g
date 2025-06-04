@@ -5,6 +5,11 @@ M569 P2 V1           ; put driver 2 into stealth chop mode
 M400
 G91                  ; relative positioning
 
+M400
+M84               ; disable motors
+M17               ; enable motors
+M400
+G1 H2 X0.1 F100   ; wake up driver
 
 ; G1 H2 Z10 F12000     ; lift Z relative to current position
 G1 H2 X20 B-20 F10000 ; go back a few mm
