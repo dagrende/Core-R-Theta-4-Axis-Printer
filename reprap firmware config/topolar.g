@@ -5,8 +5,8 @@
 M569 P0 S0                                                ; physical drive 0 goes forwards using TMC2209 driver timings
 M569 P1 S0 D3 V4000                                       ; physical drive 1 goes forwards using TMC2209 driver timings
 M569 P2 S1 D3 V4000                                       ; physical drive 2 goes forwards using TMC2209 driver timings
-M569 P3 S1                                                ; physical drive 3 goes forwards using TMC2209 driver timings
-M569 P4 S1                                                ; physical drive 4 goes forwards using TMC2209 driver timings
+M569 P3 S0                                                ; physical drive 3 goes forwards using TMC2209 driver timings
+M569 P4 S0                                                ; physical drive 4 goes forwards using TMC2209 driver timings
 M584 Y0 Z4 X1:2 U1 V2 E3                                  ; set drive mapping polar
 M350 Y16 X16 Z16 E16 I1                                   ; configure microstepping with interpolation
 M92 Y88.8888 X100.00 Z400.00 U22.2222 V22.222 E932.00     ; set steps per mm
