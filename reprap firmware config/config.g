@@ -47,7 +47,7 @@ M302 P1                                                    ; allow cold extrudes
 M950 F0 C"fan1"                                            ; create fan 0 on pin fan0 and set its frequency
 M106 P0 S0 H0 T50                                          ; set fan 0 value. Thermostatic control is turned on
 
-M950 F1 C"!PD_15" Q50                                       ; create fan 1 on pin PA_0
+M950 F1 C"!PD_15" Q50                                      ; create fan 1 on pin PA_0
 
 ; Tools
 M563 P0 D0 F0 H0                                           ; define tool 0
